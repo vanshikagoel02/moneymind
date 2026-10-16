@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "157700083750",
+    "project_id": "money-mind-68c11",
+    "storage_bucket": "money-mind-68c11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157700083750:android:7c5a9116f7088042d496e7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZBCxc9hyM59bwDXwMiZ8mNO3LU8MJMeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

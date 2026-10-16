@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_cream">#FAF6EE</color>
+    <color name="bg_cream_dark">#F2EBDC</color>
+    <color name="bg_card_white">#FFFFFF</color>
+    <color name="bg_card_warm">#FBF8F3</color>
+
+    <!-- Updated Ocean Navy Palette matching user's screenshot (#1B3B52) -->
+    <color name="navy_primary">#1B3B52</color>
+    <color name="navy_secondary">#254D6B</color>
+    <color name="navy_light">#315E82</color>
+    <color name="navy_text_muted">#82A6C4</color>
+
+    <color name="text_primary">#121926</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_on_navy">#FFFFFF</color>
+
+    <color name="gold_primary">#C59A27</color>
+    <color name="gold_light">#F5E6C4</color>
+    <color name="gold_bg">#FFF8E7</color>
+
+    <color name="blue_accent">#3B82F6</color>
+    <color name="blue_brand">#2D5282</color>
+
+    <color name="border_color">#E5DFD3</color>
+    <color name="border_dark">#CBD5E1</color>
+
+    <color name="income_green">#16A34A</color>
+    <color name="expense_red">#DC2626</color>
+
+    <color name="nav_active_bg">#EAE3D2</color>
+    <color name="nav_inactive_text">#64748B</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#80000000</color>
+</resources>

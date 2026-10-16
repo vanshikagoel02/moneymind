@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cream"
+    android:orientation="vertical">
+
+    <!-- Top Action Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_cream"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <!-- Logo -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="money "
+                android:textColor="@color/navy_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="mind"
+                android:textColor="@color/blue_brand"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:textColor="@color/gold_primary"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Right Top Bar Actions -->
+        <!-- + Add Button -->
+        <LinearLayout
+            android:id="@+id/btnTopAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_pill_navy"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Add"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Notification Badge Button -->
+        <RelativeLayout
+            android:id="@+id/btnTopBadge"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_badge_circle"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_club_badge"
+                app:tint="@color/navy_primary" />
+
+            <!-- Badge count 6 -->
+            <TextView
+                android:id="@+id/tvBadgeCount"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_avatar_navy"
+                android:backgroundTint="@color/expense_red"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Profile Avatar Button -->
+        <FrameLayout
+            android:id="@+id/btnTopAvatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_avatar_navy"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tvAvatarLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="S"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_color" />
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_color" />
+
+    <!-- Custom Scrollable Bottom Navigation Bar -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_cream"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/navContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <!-- 1. Home -->
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_card_warm"
+                android:backgroundTint="@color/nav_active_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icHome"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_home"
+                    app:tint="@color/navy_primary" />
+
+                <TextView
+                    android:id="@+id/tvHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Home"
+                    android:textColor="@color/navy_primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 2. Activity -->
+            <LinearLayout
+                android:id="@+id/navActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icActivity"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_activity"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Activity"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 3. Budget -->
+            <LinearLayout
+                android:id="@+id/navBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icBudget"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_budget"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Budget"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 4. Insights -->
+            <LinearLayout
+                android:id="@+id/navInsights"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icInsights"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_insights"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvInsights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Insights"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 5. Map -->
+            <LinearLayout
+                android:id="@+id/navMap"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icMap"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_map"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Map"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 6. Goals -->
+            <LinearLayout
+                android:id="@+id/navGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icGoals"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_goals"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvGoals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Goals"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 7. Bills -->
+            <LinearLayout
+                android:id="@+id/navBills"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icBills"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_bills"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvBills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Bills"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 8. More -->
+            <LinearLayout
+                android:id="@+id/navMore"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icMore"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_more"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="More"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 10. Settings -->
+            <LinearLayout
+                android:id="@+id/navSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <ImageView
+                    android:id="@+id/icSettings"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_nav_settings"
+                    app:tint="@color/nav_inactive_text" />
+
+                <TextView
+                    android:id="@+id/tvSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Settings"
+                    android:textColor="@color/nav_inactive_text"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
