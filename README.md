@@ -10,7 +10,7 @@
 
 ## Project Demo
 
-[Watch the MoneyMind Screen Recording]((https://drive.google.com/drive/folders/1lK8fFZQw7_ZRk9js88-6Dk1GX_jU5Kqd))
+[Watch the MoneyMind Screen Recording](https://drive.google.com/file/d/1RY1J5NclqnKppEDiNqQSpm14sTMBGgzQ/view?usp=sharing)
 
 ---
 
