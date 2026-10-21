@@ -8,6 +8,12 @@
 
 ---
 
+## Project Demo
+
+[Watch the MoneyMind Screen Recording]((https://drive.google.com/drive/folders/1lK8fFZQw7_ZRk9js88-6Dk1GX_jU5Kqd))
+
+---
+
 ## 📌 Executive Summary
 
 **Money Mind** is a production-ready, editorial FinTech Android application built natively in Java and XML for the **Mobile Application Development** subject. Designed with an intentional local-first architecture, the application provides comprehensive financial planning, location-tagged transaction recording, interactive budgeting, goal tracking, market watchlist monitoring, EMI loan calculations, and automated data exports (CSV/TXT & Firebase Cloud Firestore sync).
